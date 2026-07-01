@@ -1,0 +1,16 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+authors = [{name = "Lucia Romano"}]
+name = "controlpid"
+version = "0.1.0"
+description = "PID with anti-windup + derivative filtering and Ziegler-Nichols tuning."
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "BSD-3-Clause"}
+keywords = ["control", "engineering"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["controlpid"]
